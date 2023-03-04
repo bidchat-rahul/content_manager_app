@@ -1,7 +1,25 @@
+import { Layout } from '../../component';
 
-function About(){
+function MyTest(props) {
   return (
-    <div>About Us</div>
+    <>
+      <h1>the Test</h1>
+      {props.children}
+    </>
+  )
+}
+
+function About() {
+  return (
+    <Layout>
+      <div>About Us</div>
+      <MyTest>
+        <div>div 1</div>
+        <div>div 2</div>
+      </MyTest>
+    </Layout>
+
+
   )
 }
 
